@@ -17,9 +17,10 @@ jobs:
         uses: Platane/snk@v3
         with:
           github_user_name: arthurperico
+          # Define o caminho correto para os arquivos gerados
           outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg
+            github_contribution_grid_snake_svg: dist/github-contribution-grid-snake.svg
+            github_contribution_grid_snake_dark_svg: dist/github-contribution-grid-snake-dark.svg
 
       - name: Push the changes
         uses: EndBug/add-and-commit@v9
